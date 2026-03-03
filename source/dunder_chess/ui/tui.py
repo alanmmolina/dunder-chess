@@ -110,7 +110,7 @@ class BoardWidget(Widget):
                 is_light = (file_idx + rank_idx) % 2 == 0
                 if piece:
                     if piece.color == Color.WHITE:
-                        fg_color = "bright_white"
+                        fg_color = _FG_LIGHT if is_light else "bright_white"
                     else:
                         fg_color = _FG_LIGHT if is_light else _FG_DARK
                     symbol = piece.symbol
@@ -344,7 +344,7 @@ class BoardWidget(Widget):
 
 class ChessApp(App[None]):
 
-    TITLE = "__chess__.py"
+    TITLE = "__chess__"
 
     CSS = f"""
     Screen {{
@@ -436,7 +436,7 @@ class ChessApp(App[None]):
     def compose(self) -> ComposeResult:
         """Build the widget tree: header bar, board panel, move-history sidebar, and footer."""
         with Static(id="app-header"):
-            yield Label("__chess__.py", id="header-title")
+            yield Label("__chess__", id="header-title")
             yield Label("~/.alanmmolina", id="header-user")
         with Static(id="main"):
             with Static(id="board-panel"):

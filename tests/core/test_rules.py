@@ -1,7 +1,7 @@
-from source.core.rules import attacks, is_attacked, is_in_check, moves
-from source.models.board import Board
-from source.models.piece import Color, Piece, PieceType
-from source.models.position import Position
+from dunder_chess.core.rules import attacks, is_attacked, is_in_check, moves
+from dunder_chess.models.board import Board
+from dunder_chess.models.piece import Color, Piece, PieceType
+from dunder_chess.models.position import Position
 
 
 def _pos(notation: str) -> Position:

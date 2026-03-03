@@ -1,7 +1,7 @@
 import pytest
 from pydantic import ValidationError
 
-from source.models.piece import Color, Piece, PieceType
+from dunder_chess.models.piece import Color, Piece, PieceType
 
 
 def test_piece_type_has_six_members():

@@ -1,10 +1,10 @@
 import pytest
 
-from source.core.player import apply_move
-from source.models.board import Board
-from source.models.game import Game, GameStatus
-from source.models.piece import Color, Piece, PieceType
-from source.models.position import Position
+from dunder_chess.core.player import apply_move
+from dunder_chess.models.board import Board
+from dunder_chess.models.game import Game, GameStatus
+from dunder_chess.models.piece import Color, Piece, PieceType
+from dunder_chess.models.position import Position
 
 
 @pytest.fixture

@@ -1,10 +1,10 @@
 import asyncio
 
-from source.models.board import Board
-from source.models.game import Game, GameStatus
-from source.models.piece import Color, Piece, PieceType
-from source.models.position import Position
-from source.ui.tui import BoardWidget, ChessApp
+from dunder_chess.models.board import Board
+from dunder_chess.models.game import Game, GameStatus
+from dunder_chess.models.piece import Color, Piece, PieceType
+from dunder_chess.models.position import Position
+from dunder_chess.ui.tui import BoardWidget, ChessApp
 
 
 def _pos(notation: str) -> Position:

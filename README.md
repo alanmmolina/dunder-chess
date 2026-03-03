@@ -46,18 +46,19 @@ The engine enforces all standard piece movements for all six piece types, includ
 
 ```
 source/
-├── core/
-│   ├── rules.py        # raw move and attack generation per piece type
-│   └── player.py       # check-safe move filtering and game status evaluation
-├── models/
-│   ├── board.py        # Board — validated Position → Piece mapping
-│   ├── game.py         # Game and GameStatus — full game snapshot per turn
-│   ├── move.py         # Move — piece, from/to positions, captured piece
-│   ├── piece.py        # Piece, PieceType, and Color with unicode symbols
-│   └── position.py     # Position — file/rank validation and algebraic notation
-├── ui/
-│   └── tui.py          # ChessApp (Textual) with BoardWidget and move history sidebar
-└── main.py             # Typer entry point
+└── dunder_chess/
+    ├── core/
+    │   ├── rules.py        # raw move and attack generation per piece type
+    │   └── player.py       # check-safe move filtering and game status evaluation
+    ├── models/
+    │   ├── board.py        # Board — validated Position → Piece mapping
+    │   ├── game.py         # Game and GameStatus — full game snapshot per turn
+    │   ├── move.py         # Move — piece, from/to positions, captured piece
+    │   ├── piece.py        # Piece, PieceType, and Color with unicode symbols
+    │   └── position.py     # Position — file/rank validation and algebraic notation
+    ├── ui/
+    │   └── tui.py          # ChessApp (Textual) with BoardWidget and move history sidebar
+    └── main.py             # Typer entry point
 tests/
 ├── core/               # engine unit tests
 ├── models/             # model unit tests

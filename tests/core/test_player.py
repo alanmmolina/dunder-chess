@@ -1,13 +1,13 @@
-from source.core.player import (
+from dunder_chess.core.player import (
     apply_move,
     evaluate_game,
     evaluate_moves,
 )
-from source.core.rules import is_attacked, is_in_check
-from source.models.board import Board
-from source.models.game import Game, GameStatus
-from source.models.piece import Color, Piece, PieceType
-from source.models.position import Position
+from dunder_chess.core.rules import is_attacked, is_in_check
+from dunder_chess.models.board import Board
+from dunder_chess.models.game import Game, GameStatus
+from dunder_chess.models.piece import Color, Piece, PieceType
+from dunder_chess.models.position import Position
 
 
 def _pos(notation: str) -> Position:

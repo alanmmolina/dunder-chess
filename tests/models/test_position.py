@@ -1,7 +1,7 @@
 import pytest
 from pydantic import ValidationError
 
-from source.models.position import Position
+from dunder_chess.models.position import Position
 
 
 def _pos(notation: str) -> Position:

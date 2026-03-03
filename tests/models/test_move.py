@@ -1,9 +1,9 @@
 import pytest
 from pydantic import ValidationError
 
-from source.models.move import Move
-from source.models.piece import Color, Piece, PieceType
-from source.models.position import Position
+from dunder_chess.models.move import Move
+from dunder_chess.models.piece import Color, Piece, PieceType
+from dunder_chess.models.position import Position
 
 
 def _pos(notation: str) -> Position:

@@ -1,9 +1,9 @@
 import pytest
 from pydantic import ValidationError
 
-from source.models.game import GameStatus
-from source.models.piece import Color, PieceType
-from source.models.position import Position
+from dunder_chess.models.game import GameStatus
+from dunder_chess.models.piece import Color, PieceType
+from dunder_chess.models.position import Position
 
 
 def test_game_status_active_string_value():
@@ -179,7 +179,7 @@ def test_game_board_field_is_frozen(initial_state):
     Act: attempt to reassign board to a new Board.
     Assert: raises ValidationError — all fields are frozen, not just turn.
     """
-    from source.models.board import Board
+    from dunder_chess.models.board import Board
 
     with pytest.raises(ValidationError):
         initial_state.board = Board()  # type: ignore[misc]

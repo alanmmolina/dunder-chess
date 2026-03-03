@@ -2,7 +2,10 @@ import typer
 
 from .ui.tui import run
 
-app = typer.Typer(name="dunder-chess", help="Two-player terminal chess game.")
+app = typer.Typer(
+    name="dunder-chess",
+    help="A fully functional Python-based two-player terminal chess game."
+)
 
 
 @app.command()
