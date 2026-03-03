@@ -1,6 +1,6 @@
 # `__chess__`
 
-> A fully functional two-player terminal chess game, written in Python, with [Pydantic](https://docs.pydantic.dev/latest/) as the data layer and [Textual](https://textual.textualize.io/) and [Rich](rich.readthedocs.io/en/latest/) rendering the board.
+> A fully functional two-player terminal chess game, written in Python, with [Pydantic](https://docs.pydantic.dev/latest/) as the data layer and [Textual](https://textual.textualize.io/) / [Rich](rich.readthedocs.io/en/latest/) rendering the board.
 
 While researching and writing the [article about Pydantic](https://alanmmolina.com/articles/tools/pydantic), I kept reaching for chess as the cleanest possible domain to demonstrate what the library actually does. Pieces with defined types, positions constrained to a fixed file-and-rank grid, every rule expressible as a validation constraint. The examples wrote themselves. Somewhere along the way I started wondering what would happen if I didn't stop at the examples.
 
@@ -23,7 +23,7 @@ Clone the repo and launch the game:
 ```bash
 git clone https://github.com/alanmmolina/dunder-chess
 cd dunder-chess
-uv run __chess__ # or uv run dunder-chess
+uv run dunder-chess
 ```
 
 ## Controls
